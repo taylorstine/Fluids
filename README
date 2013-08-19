@@ -1,0 +1,46 @@
+Hello and welcome to my fluids simulation.  To run the simulation you will need CMAKE.
+
+the comands in Linux are as follows:
+[in the format of description: what to type]
+
+from the main project directory(NOT THE SRC DIRECCTORY) go to the build directory: cd ./build
+remove all files in the folder: rm -r *
+make the compiler: cmake ../src
+compile the code: make install
+run the code: ../fluids
+
+
+The simulation responds to mouse and keyboard input.  The mouse changes the velocity fields and adds densities, while the keyboard changes the simulation parameters.
+
+Mouse:
+left click, hold, move, and release to create a velocity field.  The farther you move while holding down the left button the more velocity you impose.
+right click to add density clouds
+
+Keys:
+F1: full screen mode
+r: reset the simulation
+v: toggle the display of the velocity vectors
+s: creates a sphere boundary: doesn't work too well, I wouldn't recommend it, the BC's aren't quite right for this
+q: add a cube boundary where the mouse is
+h: add a constant source of density - useful for inflow/outflow simulations
+1: add a horizontal density line
+2: add a vertical density line (to show flow through a pipe
+p: turn on particle mode, it doesn't work but it may look cool
+f: turn on "fire" rendering mode
+i: begin an inflow/outflow simulation
+l: begin a lid driven cavity flow
+up arrow\down: change viscosity by a small aount
+Rshift + up arrow\down: change viscosity by a large amount
+left\right arrow: chane diffusivity by a small amount
+RSHIFT left\right arrow: change diffuisivity by a large amount
+c: clear the density, but don't reset the simulation
+
+Any questions or comments email: taylorstine@gmail.com
+
+sources: this fluid simulator is based on "Real-time Rendering of Fluids for Games" a paper by Jos Stam
+
+
+Trouble shooting:
+
+I get some kind of window compatability error when I run the executable, what's up with that?
+-That's because I have a 32 bit machine, and you probably have a 64 bit machine(Mr. Rockafeller) so you'll have to compile the code yourself to create an executable file.
