@@ -1,0 +1,28 @@
+#ifndef _TJS_MESH_
+#define _TJS_MESH_
+
+struct Color{
+  float r;
+  float g;
+  float b;
+  float a;
+};
+struct Vertex{
+  float x;
+  float y;
+};
+
+struct Triangle{
+  GLuint indices[3];
+};
+
+struct Mesh{
+  Vertex * vertices;
+  Triangle * triangles;
+  Color *colors;
+  int num_vertices;
+  int num_triangles;
+};
+
+
+#endif

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/taylor/code/src/main/main.cpp
+iostream
+-
+GL/glew.h
+-
+GL/glu.h
+-
+GL/gl.h
+-
+SDL/SDL.h
+-
+math/math.hpp
+/home/taylor/code/src/main/math/math.hpp
+simulate.cpp
+/home/taylor/code/src/main/simulate.cpp
+omp.h
+-
+
+/home/taylor/code/src/main/simulate.cpp
+iostream
+-
+stdlib.h
+-
+
+/home/taylor/code/src/math/math.hpp
+algorithm
+-
+cmath
+-
+

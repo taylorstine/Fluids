@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.8)
+project(CFD)
+
+include_directories(
+  ${CFD_SOURCE_DIR}
+  ${SDL_INCLUDE_DIR}
+  ${GLEW_INCLUDE_DIRS}
+)
+add_subdirectory(main)
+add_subdirectory(math)

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libsimulation.a  CMakeFiles/simulation.dir/fluid_simulator.cpp.o CMakeFiles/simulation.dir/mesh.cpp.o
+/usr/bin/ranlib libsimulation.a
